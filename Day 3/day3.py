@@ -22,11 +22,8 @@ def adjacencies(number):
             symbol = lines[y][x]
             if(not (symbol.isdigit() or symbol == '.' or symbol == '\n')):
                 if(symbol == '*'):
-                    numbers = adjacencyTable.get((x, y))
-                    if(numbers is None):
-                        adjacencyTable[(x, y)] = [int(number['number'])]
-                    else:
-                        adjacencyTable[(x, y)].append(int(number['number']))
+                    adjacencyTable[(x, y)] = adjacencyTable.get((x, y), [])
+                    adjacencyTable[(x, y)].append(int(number['number']))
                 
 for i in range(len(lines)):
     row = lines[i]

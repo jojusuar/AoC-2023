@@ -2,6 +2,7 @@ from functools import reduce
 
 archive = open('input.txt', 'r')
 lines = list(archive.readlines())
+archive.close()
 
 total = 0
 

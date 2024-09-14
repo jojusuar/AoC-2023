@@ -2,6 +2,7 @@ from functools import reduce
 
 archive = open('input.txt', 'r')
 lines = archive.readlines()
+archive.close()
 
 dicc = {'red': 12, 'green': 13, 'blue': 14}
 

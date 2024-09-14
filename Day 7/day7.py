@@ -49,7 +49,7 @@ class Hand:
 
 heap = []
 
-with open('D:/ESPOL/AoC-2023-Solutions/JoseJulioSuarez/Day 7/input.txt', 'r') as input:
+with open('input.txt', 'r') as input:
     for line in input:
         data = line.split(' ')
         heapq.heappush(heap, Hand(data[0], data[1]))
